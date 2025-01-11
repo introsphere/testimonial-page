@@ -58,7 +58,7 @@ This project was built using the following tools:
 ## Contact
 
 - GitHub: [@introsphere](https://github.com/introsphere)
-- LinkedIn: [your-linkedin](https://www.linkedin.com/in/todorov-tihomir/)
+- LinkedIn: [todorov-tihomir](https://www.linkedin.com/in/todorov-tihomir/)
 
 ## Acknowledgements
 
