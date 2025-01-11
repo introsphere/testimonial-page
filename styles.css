@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font and Color Styling */
+body {
+  background-color: #FAFAF9;
+  font-family: "Sora";
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.page-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 1.3rem;
+  border: 2px transparent #F5C044;
+  border-radius: 50%;
+  background-color: #F5C044;
+  margin-bottom: 0.85rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-icon::before {
+  content: "⭐️";
+  font-size: 1rem;
+  background: linear-gradient(to top, #f1d697, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #18181B;
+  margin-bottom: 0.5rem;
+}
+
+.page-intro {
+  font-size: 0.725rem;
+  color: #52525A;
+  margin-bottom: 2rem;
+}
+
+.checklist-items {
+  font-size: 0.625rem;
+  font-weight: 450;
+  color: #52525A;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+
+.checklist-items:first-child {
+  margin-top: 2rem;
+}
+
+.feedback-container {
+  font-size: 0.7rem;
+  background-color: #FFF;
+  border: 1px solid #FAFAF9;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px #0000001A;
+  padding: 1.75rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.brand-rating {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.feedback-author {
+  color: #18181B;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-message {
+  color: #52525A;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .page-intro {
+    font-size: 1.25rem;
+  }
+
+  .page-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-container {
+    font-size: 0.9rem;
+    max-width: 35%;
+  }
+
+  .feedback-container:nth-child(1) {
+    margin-left: 17.5%;
+  }
+
+  .feedback-container:nth-child(2) {
+    margin-right: 17.5%;
+  }
+
+  .checklist-items {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  body {
+    margin-top: 10.125rem;
+    max-width: 71rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-intro {
+    font-size: 1.25rem;
+    flex: 0 0 45%;
+    margin-bottom: 0;
+  }
+
+  .page-feedback {
+    font-size: 1rem;
+    flex: 0 0 55%;
+  }
+
+  .feedback-container {
+    font-size: 0.9rem;
+    max-width: 55%;
+    margin-bottom: 2rem;
+  }
+
+  .feedback-container:nth-child(1) {
+    margin-left: 12rem;
+  }
+
+  .feedback-container:nth-child(2) {
+    margin-right: 12rem;
+  }
+
+  .checklist-items {
+    font-size: 0.875rem;
+  }
+}
